@@ -6,13 +6,18 @@ public class Ejercicio8 {
 
 	public static void main(String[] args) {
 		
-		//Variable
+		//Variable de la nota
 		double nota;
+		//Variable del Scanner
 		Scanner sc = new Scanner(System.in);
 		
+		//Mensaje para introducir la nota
 		System.out.print("Introduce tu nota: ");
+		//Scan de la nota
 		nota = sc.nextDouble();
 		
+		
+		//Mensaje que se proyecta segun la nota que ponga el usuario
 		if(nota >= 0 && nota < 5) {
 			System.out.print(nota + " es Insuficiente");
 		}else if (nota >= 5 && nota < 6) {
@@ -26,6 +31,7 @@ public class Ejercicio8 {
 		}else {
 			System.out.println("Has insertado mal los datos");
 		}
+		//Cierre del Scanner
 		sc.close();
 	}
 
